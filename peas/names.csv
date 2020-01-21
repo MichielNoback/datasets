@@ -1,0 +1,19 @@
+#REF: https://onlinelibrary.wiley.com/doi/abs/10.1002/jsfa.2740510212
+column_label,name,units,description
+TM,Tenderometer,Arbitrary Units (AU),A measure of the maturity and tenderness of samples of fruits and vegetables
+DM,Dry matter,gram*kg-1,-
+DMF,Dry matter after freezing,gram*kg-1,-
+SP,Sucrose percentage,percentage (%),-
+TG1,TotalGlucose1,(unknown), 
+TG2,TotalGlucose2,(unknown), 
+PFL,Pea Flavour,intensity scale (1 to 9),A flavour variable & sensory attribute: characteristic/rich
+SW,Sweetness,intensity scale (1 to 9),A flavour variable & sensory attribute: light/aromatic/fresh
+FR,Fruity flavour,intensity scale (1 to 9),A flavour variable & sensory attribute: light/aromatic/fresh
+OFL,Off-flavour,intensity scale (1 to 9),A flavour variable & sensory attribute: harsh/bitter/metallic
+MN,Mealiness,intensity scale (1 to 9),A texture variable & sensory attribute
+HN,Hardness,intensity scale (1 to 9),A texture variable & sensory attribute
+WN,Whiteness,Arbitrary Units (AU),
+COL1,Colour1,(unknown),
+COL2,Colour2,(unknown),
+COL3,Colour3,(unknown),
+SKIN,Skin,(unknown),

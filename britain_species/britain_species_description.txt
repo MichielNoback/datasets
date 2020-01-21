@@ -1,0 +1,35 @@
+Dataset: britain_species.dat
+
+Sources: 
+M.P. Johnson and D.S. Simberloff (1974). "Environmental Determinants
+of Island Species Numbers in the British Isles," Journal of Biogeography,
+Vol. 1, pp. 149-154
+
+E.D. McCoy and E.F. Connor (1976). "Enviromnmental Determinants of
+Island Species Number in the British Isles: A Reconsideration,"
+Journal of Biogeography, Vol. 3, pp. 381-382.
+
+Description:
+Numbers of species on 42 British Isles, Area, Elevation, # of soil types,
+latitude, and distance from Britain.
+Authors fit: linear, log transformed, and "mixed" models (presumably
+adding small distance to Britain for the isle of Britain.
+
+Model 1: No variables transformed
+Model 2: All variables transformed
+Model 3: Only Area log transformed
+Model 4: Species and # soil types not transformed, all others log transformed
+Model 5: S not transformed, all IV's and their log transfromed
+Model 6: S and A log transformed, none of others transformed
+Model 7: All variables transformed except # soil types
+
+See second source for model with Britain removed
+
+Variables/Columns
+Island    1-20
+Area      21-30  /* sq. km  */
+Elevation  32-38  /* max in meters  */
+Number of soil types   44-46
+Latitude   50-54  /* Midpoint of Lat Range in Degrees North */
+Distance from Britain  57-62   /* kilometers  */
+Number of species     65-70 

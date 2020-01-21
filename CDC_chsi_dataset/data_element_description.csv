@@ -1,0 +1,19 @@
+COLUMN_NAME;DATA_TYPE;IS_PERCENT_DATA;DESCRIPTION
+CHSI_County_Name;Text;N;Name of county
+CHSI_State_Name;Text;N;Name of State or District of Columbia
+CHSI_State_Abbr;Text;N;Two-character postal abbreviation for state name
+Strata_ID_Number;Integer;N;CHSI Peer County Stratum Number
+Strata_Determining_Factors;Text;N;Listing of strata factors
+Number_Counties;Integer;N;Number of peer counties
+Population_Size;Integer;N;County data, population size
+Population_Density;Integer;N;County data, population density (people per square mile)
+Poverty;Decimal;Y;County data, individuals living below poverty level
+Age_19_Under;Decimal;Y;County data, population under age 19
+Age_19_64;Decimal;Y;County data, population age 19-64
+Age_65_84;Decimal;Y;County data, population age 65-84
+Age_85_and_Over;Decimal;Y;County data, population age 85+
+White;Decimal;Y;County data, White
+Black;Decimal;Y;County data, Black
+Native_American;Decimal;Y;County data, American Indian
+Asian;Decimal;Y;County data, Asian/Pacific Islander
+Hispanic;Decimal;Y;County data, Hispanic origin

@@ -1,2 +1,2 @@
-Protein localization predictions for the stap aureus genome. 
+Protein localisation predictions for the Staphylococcus aureus genome. 
 Lecture dataset for ILST

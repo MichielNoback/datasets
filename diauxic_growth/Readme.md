@@ -13,4 +13,4 @@ During the first phase, cells preferentially metabolize the sugar on which it ca
 
 ### The data
 
-The data were obtained by carefully studying the original publication figure and "reverse engineering" the original measurements..
+The data were obtained by carefully studying the original publication figure and "reverse engineering" the original measurements. The x-axis displays elapsed time in hours; the y-axis optical density (OD) in "Klett Units".

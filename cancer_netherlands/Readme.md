@@ -6,3 +6,4 @@ link: [https://iknl.nl/nkr-cijfers](https://iknl.nl/nkr-cijfers)
 
 A broad selection was made, split over age groups, cancer types and gender (when available) and downloaded as Excel.
 
+Selection included all location categories.

@@ -1,0 +1,102 @@
+---
+title: "Plant high light/low light"
+author: "HJUR"
+date: "3/17/2021"
+output: html_document
+---
+
+## Load modules
+
+```{r message=FALSE}
+library(readxl)
+library(tidyverse)
+library(rstatix)
+library(knitr)
+```
+
+## Read the data in a tibble and print random rows
+
+```{r}
+filename <- "meetgegevens_exp1.xlsx"
+df <- read_excel(filename, sheet = 1) 
+df$`Achternaam student` <- NULL
+df$`Voornaam student`<- NULL
+df$`Plant # (1, 2, 3)`<- NULL
+df<- df %>% 
+  dplyr::rename(condition = `Condition (HL/LL)`)
+kable(df %>% sample_n(6), caption = "Overview of our data (6 random rows displayed")
+```
+
+## How many data points per condition?
+
+```{r}
+kable(table(df$condition), caption = "Observation per condition")
+
+```
+
+
+## Mean and SD values
+
+```{r}
+mean_sd <- df %>%
+  dplyr::group_by(condition) %>%
+  dplyr::summarise(across(
+    .cols = where(is.numeric), 
+    .fns = list(Mean = mean, SD = sd), na.rm = TRUE, 
+    .names = "{fn} {col}"
+    ))
+
+kable(mean_sd, caption = "Mean and SD values")
+```
+
+## Transform the data to tidy format
+
+```{r}
+# Put all variables in the same column except `Species`, the grouping variable
+df.long <- df %>%
+  pivot_longer(-condition, names_to = "variables", values_to = "value")
+
+kable(df.long %>% sample_n(6), caption = "Tidy transformed data (6 random rows shown)")
+```
+
+## Run multiple T-tests
+
+```{r}
+stats <- df.long %>%
+  group_by(variables) %>%
+  t_test(value ~ condition) %>%
+  adjust_pvalue(method = "BH") %>%
+  add_significance()
+kable(stats, caption = "Results of T-test")
+```
+
+
+## Create plots
+
+```{r}
+create_plot <- function(df, condition, mean_val, sd){
+  item <- (sub("Mean ", "", mean_val))
+  stat_status <- round(stats[stats$variables == item, 10][[1]], digits = 5)
+  title <- paste(mean_val, "P-value:", stat_status)
+  p <- ggplot(df, aes(.data[[condition]], .data[[mean_val]])) +
+    geom_col(fill = "blue", color = "black") +
+    ggtitle(title) +
+    geom_errorbar(aes(ymin = .data[[mean_val]], ymax = .data[[mean_val]] + .data[[sd]]), width = 0.2)
+  return(p)
+}
+```
+
+```{r}
+for(i in seq(2, length(colnames(mean_sd)), 2)){
+  #print(c(colnames(mean_sd)[i], colnames(mean_sd)[i + 1]))
+  plot <- create_plot(mean_sd, "condition", colnames(mean_sd)[i], colnames(mean_sd)[i + 1])
+  print(plot)
+}
+
+```
+
+The end...
+
+---
+
+

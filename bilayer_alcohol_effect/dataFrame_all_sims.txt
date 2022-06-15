@@ -1,0 +1,52 @@
+## Toelichting Tsjerk
+
+De class variables zitten onder ‘Parameters’. De ‘Measurements’ geven een beeld van de toestand van de membraan. 
+De area per lipid is ongeveer het totale oppervlak gedeeld door het aantal lipiden, de thickness betreft de 
+dwarsdoorsnede van een membraan. Als de lipiden dicht op elkaar gaan zitten, neemt de APL af en doordat de 
+lipiden rechterop komen wordt de membraan ook dikker en minder flexibel (bending rigidity). 
+Vice versa geldt dat (bijvoorbeeld door hogere temperatuur en/of alcohol) de lipiden meer vloeibaar worden en dus 
+meer ruimte in nemen (grotere APL) en de membraan minder dik en flexibeler wordt. De belangrijke vragen zijn eigenlijk 
+‘wat is de rol van sterolen hierin?’ en ‘wat is de rol van saturatie?’ (zeg aantal dubbele bindingen in de staarten).
+
+
+## Parameters
+
+Temperature (Kelvin)
+
+Sterol type
+  chole - cholesterol
+  ergo - ergosterol
+  no - no sterol present
+
+Sterol concentration (%)
+
+Other (phospho)lipids in membrane (headgroup)
+  PE - phoshpatidyl ethanolamine
+
+Aliphatic tails
+
+  DP - dipalmitoyl (16:0/16:0)
+  DO - dioleoyl (18:1/18:1)
+  DI - dilinoleoyl (18:2/18:2)  
+  PO - palmitoyl oleoyl (16:0/18:1)
+  PI - palmitoyl linoleoyl (16:0/18:2)
+
+Saturation index (double bonds per tail)
+
+Phosphatidyl choline concentration (% of non-sterol lipids)
+
+Ethanol concentration (% of solvent)
+
+## Measurements:
+
+Area per lipid (nm^2)
+
+Thickness (nm)
+
+Bending rigidity (kB T)
+
+Tilt angle (degrees)
+
+Z-order
+
+Compressibility (cN / m)

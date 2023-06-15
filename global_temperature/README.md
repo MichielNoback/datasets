@@ -1,10 +1,33 @@
-# Global temperature time series
+# Global temperature time series (2 sources)
+
+## GLB.Ts+dSST.csv
+
+Global-mean monthly, seasonal, and annual means, 1880-present.
+
+This dataset was downlaoded on june 15, 2023 from https://data.giss.nasa.gov/gistemp/
+
+The file contains monthly Global and Hemispheric Monthly Means and Zonal Annual Means
+Combined Land-Surface Air and Sea-Surface Water Temperature Anomalies (Land-Ocean Temperature Index, L-OTI)
+In tabular format of temperature anomalies, i.e. deviations from the corresponding 1951-1980 means.
+
+Year, - year
+Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec - individual months
+J-D - whole year (jan-Dec)
+D-N - Dec-Nov (?)
+DJF - winter
+MAM - spring
+JJA - summer
+SON - fall
+
+
+## annual.csv
+
 
 Global Temperature Time Series. Data are included from the GISS Surface Temperature (GISTEMP) analysis and the global component of Climate at a Glance (GCAG). Two datasets are provided: 1) global monthly mean and 2) annual mean temperature anomalies in degrees Celsius from 1880 to the present.
 
-## Data
+### Data
 
-### Description
+#### Description
 
 1. [GISTEMP Global Land-Ocean Temperature Index][gistemp]:
 
@@ -14,12 +37,12 @@ Global Temperature Time Series. Data are included from the GISS Surface Temperat
 
   > Global temperature anomaly data come from the Global Historical Climatology Network-Monthly (GHCN-M) data set and International Comprehensive Ocean-Atmosphere Data Set (ICOADS), which have data from 1880 to the present. These two datasets are blended into a single product to produce the combined global land and ocean temperature anomalies. The available timeseries of global-scale temperature anomalies are calculated with respect to the 20th century average [...].
 
-### Citations
+#### Citations
 
 1. *GISTEMP: NASA Goddard Institute for Space Studies (GISS) Surface Temperature Analysis, Global Land-Ocean Temperature Index.*
 1. *NOAA National Climatic Data Center (NCDC), global component of Climate at a Glance (GCAG).*
 
-### Sources
+#### Sources
 
 1. 
   * Name: GISTEMP Global Land-Ocean Temperature Index
@@ -28,7 +51,7 @@ Global Temperature Time Series. Data are included from the GISS Surface Temperat
   * Name: Global component of Climate at a Glance (GCAG)
   * Web: http://www.ncdc.noaa.gov/cag/data-info/global
 
-### Additional Data
+#### Additional Data
 
 * Upstream datasets:
   * [GHCN-M][ghcn-m]
@@ -37,13 +60,13 @@ Global Temperature Time Series. Data are included from the GISS Surface Temperat
 * Other:
   * [HadCRUT4][hadcrut4] time series data are not included in the published Data Package at this time because of the dataset's restrictive [terms and conditions][hadcrut4-terms]. However, the data preparation script supports processing the dataset.
 
-## License
+### License
 
-### ODC-PDDL-1.0
+#### ODC-PDDL-1.0
 
 This Data Package and these datasets are made available under the Public Domain Dedication and License v1.0 whose full text can be found at: http://www.opendatacommons.org/licenses/pddl/1.0/
 
-### Notes
+#### Notes
 
 The upstream datasets do not impose any specific restrictions on using these data in a public or commercial product:
 

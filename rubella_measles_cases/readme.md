@@ -1,4 +1,4 @@
-﻿# Measles and Rubella cases
+# Measles and Rubella cases
 
 ## Measles
 

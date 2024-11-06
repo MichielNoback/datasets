@@ -1,4 +1,4 @@
-﻿Date_measurement,RWZI_AWZI_code,RWZI_AWZI_name,X_coordinate,Y_coordinate,Postal_code,Security_region_code,Security_region_name,Percentage_in_security_region,RNA_per_ml,Representative_measurement
+Date_measurement,RWZI_AWZI_code,RWZI_AWZI_name,X_coordinate,Y_coordinate,Postal_code,Security_region_code,Security_region_name,Percentage_in_security_region,RNA_per_ml,Representative_measurement
 2020-03-30,32002,Tilburg,132554,401565,5048TD,VR20,Midden- en West-Brabant,1,1837,TRUE
 2020-03-31,3010,Assen,234705,558203,9403AK,VR03,Drenthe,1,2254,TRUE
 2020-03-31,1033,Garmerwolde,240219,585040,9798TC,VR01,Groningen,1,427,TRUE

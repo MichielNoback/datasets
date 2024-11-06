@@ -1,0 +1,26 @@
+Country: Country name
+IQ: Average IQ
+Income: Gross national income
+Expenditure: Yearly spending of country
+Temperature: Average temperature (degrees C)
+Length: Average length of male reproductive organ (cm)
+Body: Average body length
+Percentage: Percentage of Length w.r.t. Body
+Volume: Average volume of prominences located on the upper ventral region of females' torsos
+BMI: Average BMI
+M_Height: Average male height
+M_Weight: Average male weight
+M_BMI: Average male BMI
+F_Height: Average female height
+F_Weight: Average female weight
+F_BMI: Average female BMI
+Stability: Political stability index
+Rights: Human rights index
+Health: National health index
+Security: Security feeling index
+Climate: Climate index
+Costs: Living costs index
+Popularity: Popularity index
+Total: Overall country score
+code2: Two-letter country code
+code3: Three-letter country code

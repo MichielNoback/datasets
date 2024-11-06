@@ -1,4 +1,4 @@
-﻿Feature;Explanation;Measurement
+Feature;Explanation;Measurement
 Age;Age of patient;years
 Anaemia;Decrease of red blood cells or hemoglobin;Boolean
 High blood pressure;If a patient has hypertension;Boolean
